@@ -51,3 +51,69 @@ using namespace std;
 //     cout<<$ab;
 //     return 0;
 // }
+
+// * Sum of element
+// int main(){
+//     int a[4];
+//     for(int i=0; i<4; i++){
+//         cout << "Enter element " << i+1 << ": ";
+//         cin >> a[i];
+//     }
+//     int sum = 0;
+//     for(int i=0; i<4; i++){
+//         sum += a[i];
+//     }
+//     cout <<"sum: " << sum ;
+// }
+
+// max and min
+// int main(){
+//     int a[4];
+//     for(int i=0; i<4; i++){
+//         cout << "Enter element " << i+1 << ": ";
+//         cin >> a[i];
+//     }
+//     int max = a[0], min = a[0];
+//     for(int i=1; i<4; i++){
+//         if(a[i] > max) max = a[i];
+//         if(a[i] < min) min = a[i];
+//     }
+//     cout << "Max: " << max << ", Min: " << min;
+// }
+
+//reverse the array
+// int main(){
+//     int a[4];
+//     for(int i=0; i<4; i++){
+//         cout << "Enter element " << i+1 << ": ";
+//         cin >> a[i];
+//     }
+//     cout << "Reversed array: ";
+//     for(int i=3; i>=0; i--){
+//         cout << a[i] << " ";
+//     }
+//     return 0;
+// }
+
+
+// count the frequency of given element
+int main(){
+    int a[4];
+    for(int i=0; i<4; i++){
+        cout << "Enter the element" << i+1 << ": ";
+        cin >> a[i];
+    }
+    int element, count = 0;
+    cout << "Enter the element to count: ";
+    cin >> element;
+
+    for(int i=0; i<4; i++){
+        if(a[i] == element) {
+            count++;
+        }
+    }
+    cout << count;
+}
+
+
+
