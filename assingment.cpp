@@ -97,25 +97,143 @@ using namespace std;
 
 
 // count the frequency of given element
+// int main(){
+//     int a[4];
+//     for(int i=0; i<4; i++){
+//         cout << "Enter the element" << i+1 << ": ";
+//         cin >> a[i];
+//     }
+//     int element, count = 0;
+//     cout << "Enter the element to count: ";
+//     cin >> element;
+
+//     for(int i=0; i<4; i++){
+//         if(a[i] == element) {
+//             count++;
+//         }
+//     }
+//     cout << count;
+// }
+
+
+
+
+
+
+//right angle triangle
 int main(){
-    int a[4];
-    for(int i=0; i<4; i++){
-        cout << "Enter the element" << i+1 << ": ";
-        cin >> a[i];
-    }
-    int element, count = 0;
-    cout << "Enter the element to count: ";
-    cin >> element;
-
-    for(int i=0; i<4; i++){
-        if(a[i] == element) {
-            count++;
+    int n;
+    cout << "Enter the number of rows: ";
+    cin >> n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            cout << "*";
         }
+        cout << endl;
     }
-    cout << count;
+    return 0;
 }
+// inverted right angle triangle
+int main(){
+    int n;
+    cout << "Enter the number of rows: ";
+    cin >> n;
+    for(int i=n; i>=1; i--){
+        for(int j=1; j<=i; j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+//number triangle
+int main(){
+    int n;
+    cout << "Enter the number of rows: ";
+    cin >> n;
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+// inverted number triangle
+int main(){
+    int n;
+    cout << "Enter the number of rows: ";
+    cin >> n;
+    for(int i=n; i>=1; i--){
+        for(int j=1; j<=i; j++){
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+//pyramid pattern
+int main(){
+    int n;
+    cout << "Enter the number of rows: ";
+    cin >> n;
+    for(int i=1; i<=n; i++){
+        for(int j=n; j>i; j--){
+            cout << " ";
+        }
+        for(int j=1; j<=i; j++){
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+// diamond pattern
+int main(){
+    int n;
+    cout << "Enter the number of rows: ";
+    cin >> n;
+    // upper part
+    for(int i=1; i<=n; i++){
+        for(int j=n; j>i; j--){
+            cout << " ";
+        }
+        for(int j=1; j<=i; j++){
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    // lower part
+    for(int i=n-1; i>=1; i--){
+        for(int j=n; j>i; j--){
+            cout << " ";
+        }
+        for(int j=1; j<=i; j++){
+            cout << "* ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+// butterfly pattern
+int main(){
+    int n;
+    cout << "Enter the number of rows: ";
+    cin >> n;
+    // upper part
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
+            cout << "*";
+        }
+        for(int j=2*n-2*i; j>0; j--){
+            cout << " ";
+        }
+        for(int j=1; j<=i; j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+    
 
-
-
-//Operators 
-//unary Operators :-
+    return 0;
+}
